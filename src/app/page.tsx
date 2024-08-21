@@ -1,4 +1,4 @@
-"use client"; // Next.js app directory uses 'use client' for client-side code
+"use client";
 
 import { useState } from "react";
 import Image from "next/image";
@@ -6,7 +6,7 @@ import { Howl } from "howler";
 
 const HomePage = () => {
   const [isBookOpen, setIsBookOpen] = useState(false);
-  const [bgImage, setBgImage] = useState<string | null>(null); // Use a string for background image
+  const [bgImage, setBgImage] = useState<string | null>(null);
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
 
   const handleClick = () => {
@@ -30,7 +30,7 @@ const HomePage = () => {
       className="min-h-screen flex flex-col justify-center items-center transition-colors duration-500 relative"
       style={{
         backgroundImage: bgImage ? `url(${bgImage})` : "none",
-        backgroundSize: "cover", // Supaya gambar memenuhi seluruh layar
+        backgroundSize: "cover",
         backgroundPosition: "center"
       }}>
       {!isBookOpen ? (
