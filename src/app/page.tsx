@@ -55,7 +55,6 @@ const BookComponent = () => {
   const [page, setPage] = useState(0);
 
   const nextPage = () => {
-    if (page < 2) setPage(page + 1);
     if (page < 3) setPage(page + 1);
   };
 
@@ -96,12 +95,12 @@ const BookComponent = () => {
         <div className="absolute inset-2 bg-white p-4 rounded-md shadow-inner">
           <h3 className="text-lg font-semibold">Motivasi & Dukungan</h3>
           <p className="mt-4">
-            "Paula, tetaplah percaya pada dirimu sendiri! Setiap langkah yang kamu ambil, baik besar
-            maupun kecil, membawa kamu lebih dekat ke impianmu. Tidak masalah seberapa sulit
+            &quot;Paula, tetaplah percaya pada dirimu sendiri! Setiap langkah yang kamu ambil, baik
+            besar maupun kecil, membawa kamu lebih dekat ke impianmu. Tidak masalah seberapa sulit
             tantangannya, kamu sudah membuktikan berkali-kali bahwa kamu bisa melewatinya dengan
             senyuman dan semangat yang tak pernah padam. Dunia ini mungkin kadang tidak mudah, tapi
             ingatlah bahwa kamu tidak berjalan sendiri. Ada banyak orang yang mendukungmu, termasuk
-            aku".
+            aku&quot;.
           </p>
         </div>
       )}
@@ -111,10 +110,11 @@ const BookComponent = () => {
         <div className="absolute inset-2 bg-white p-4 rounded-md shadow-inner">
           <h3 className="text-lg font-semibold">Motivasi & Dukungan</h3>
           <p className="mt-4">
-            "Teruslah berkarya, teruslah menginspirasi, dan tetaplah menjadi dirimu yang autentik
-            dan penuh kebaikan. Jangan takut untuk bermimpi lebih tinggi, karena kamu memiliki
-            potensi yang luar biasa. Teruslah berusaha, percaya pada kemampuanmu, dan jadikan setiap
-            rintangan sebagai batu loncatan menuju kesuksesanmu. We believe in you!"
+            &quot;Teruslah berkarya, teruslah menginspirasi, dan tetaplah menjadi dirimu yang
+            autentik dan penuh kebaikan. Jangan takut untuk bermimpi lebih tinggi, karena kamu
+            memiliki potensi yang luar biasa. Teruslah berusaha, percaya pada kemampuanmu, dan
+            jadikan setiap rintangan sebagai batu loncatan menuju kesuksesanmu. We believe in
+            you!&quot;
           </p>
         </div>
       )}
